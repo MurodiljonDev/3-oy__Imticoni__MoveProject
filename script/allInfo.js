@@ -5,7 +5,7 @@ const fourRow = document.querySelector("#row__four")
 const fiveRow = document.querySelector("#row__Five")
 
 const imgWrapper = document.querySelector(".image__wrapper");
-const moveInfo = document.querySelector(".move__info");
+const moveInfo = document.querySelector(".title__div");
 const reyting = document.querySelector(".reyting");
 const relizeBox = document.querySelector(".relize__box");
 const vote__num = document.querySelector(".vote__num");
@@ -31,18 +31,52 @@ fetch(`https://api.themoviedb.org/3/movie/${movieId}`, methodTooking)
 
 function renderingFetchMovie(date){
     const img = document.createElement("img");
+    const h3 = document.createElement("h3");
+    const p = document.createElement("p");
+    const span1 = document.createElement("span");
+    const strong1 = document.createElement("strong");
+    const strong2 = document.createElement("strong");
+    const strong3 = document.createElement("strong");
+
     img.src = unicLink + date.backdrop_path;
     img.className ="img__class";
     imgWrapper.appendChild(img)
 
-    console.log(date)
-
-    const h3 = document.createElement("h3");
     h3.className ="move__title";
-    h3 = date.title;
-    console.log(h3)
+    h3.innerHTML = `
+        ${date.title} 
+        `
     moveInfo.appendChild(h3);    
 
+    p.className = "move__overview";
+    p.innerHTML = `
+        ${date.overview}
+    `
+    moveInfo.appendChild(p)
+
+    span1.className = "reyting__num";
+    span1.innerHTML = `
+        ${date.vote_average.toFixed(1)}
+    `
+    reyting.appendChild(span1)
+
+    strong1.className = "relize__date";
+    strong1.innerHTML = `
+        ${date.release_date}
+    `
+    relizeBox.appendChild(strong1);
+
+    strong2.className = "vote__num--title";
+    strong2.innerHTML = `
+        ${date.popularity}
+    `
+    vote__num.appendChild(strong2);
+
+    strong3.className = "language__Movie";
+    strong3.innerHTML = `
+        ${date.original_language.toUpperCase()}
+    `
+    language.appendChild(strong3)
 }
 
 
