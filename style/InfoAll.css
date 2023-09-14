@@ -1,0 +1,91 @@
+.hollewood__box{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+}
+
+.moveInfoWrapper{
+    padding: 30px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(4, 46, 46);
+    border-radius: 20px;
+}
+
+.image__wrapper img{
+    width: 600px;
+}
+
+.move__info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.move__title{
+    color: #FFF;
+    font-family: 'Khula',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+.move__overview{
+    color: #FFF;
+    font-family: "Khula",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.relize__reyting{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.reyting__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reyting{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.reyting__num{
+    position: relative;
+    top: 8px;
+    color: #FFF;
+    font-family: "Khula", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+}
+.reyting img{
+    width: 50px;
+}
+.relize__box{
+    display: flex;
+    gap: 5px;
+}
+.relize__box span, .relize__box strong{
+    color: #FFF;
+    font-family: "Khula", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+.vote__num span, .vote__num strong{
+    color: #FFF;
+    font-family: "Khula",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+.language span, .language strong{
+    color: #FFF;
+    font-family: "Khula", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}

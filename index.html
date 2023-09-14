@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <style> 
+    
+            .wrapper{
+                position: relative;
+                padding: 50px;
+
+            }
+
+            .swiper {
+                width: 100%;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+      </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header__Wrapper">
+                    <div class="icon__navbar">
+                        <img class="nav_img" src="img/pngwing 1.svg" alt="">
+                        <ul class="nav_bar">
+                            <li class="nav__item"><a href="#">HOME</a></li>
+                            <li class="nav__item"><a href="#">TV-SHOWS</a></li>
+                            <li class="nav__item"><a href="#">MOVIES</a></li>
+                            <li class="nav__item"><a href="#">NEW</a></li>
+                            <li class="nav__item"><a href="#">POPULAR</a></li>                    
+                        </ul>    
+                    </div>
+                    <div class="select__search">
+                        <div class="countries">
+                            <span>COUNTRIES</span>
+                            <img src="img/Expand Arrow.svg">
+                        </div>
+                        <input type="text" placeholder="Search">
+                    </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="banner__wrapper">                 
+                <div class="banner__img">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          
+                        </div>            
+                      </div>   
+                </div>
+                <div class="banner__box">
+                    <div class="banner__title">
+                        <h2>Darlings</h2>
+                    </div>
+                    <div class="btn__box">
+                            <button type="button"><img src="img/Play.svg"><span>Play</span></button>
+                            <button type="button">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <!-- <div class="container"> -->
+            <div class="container">
+                <div class="hollewood__box">
+                    <h3>Hollywood Movies </h3>
+                        <div id="holly" class="hollewood__wrapper">
+                        
+                        </div>       
+                </div>  
+            </div>
+    </section>
+
+    <section>
+        <!-- <div class="container"> -->
+            <div class="container">
+                <div class="hollewood__box">
+                    <h3>Trending Now</h3>
+                        <div id="row__two" class="hollewood__wrapper">
+                        
+                        </div>       
+                </div>  
+            </div>
+    </section>
+    
+    <section>
+        <!-- <div class="container"> -->
+            <div class="container">
+                <div class="hollewood__box">
+                    <h3>Actions</h3>
+                        <div id="row__three" class="hollewood__wrapper">
+                        
+                        </div>       
+                </div>  
+            </div>
+    </section>
+
+    <section>
+        <!-- <div class="container"> -->
+            <div class="container">
+                <div class="hollewood__box">
+                    <h3>Actions width Mulths</h3>
+                        <div id="row__four" class="hollewood__wrapper">
+                        
+                        </div>       
+                </div>  
+            </div>
+    </section>
+
+    <section>
+        <!-- <div class="container"> -->
+            <div class="container">
+                <div class="hollewood__box">
+                    <h3>Anime width Action</h3>
+                        <div id="row__Five" class="hollewood__wrapper">
+                        
+                        </div>       
+                </div>  
+            </div>
+    </section>
+
+
+
+    <script src="/script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    
+    <script src="script/allInfo.js"></script>
+</body>
+</html>
+
